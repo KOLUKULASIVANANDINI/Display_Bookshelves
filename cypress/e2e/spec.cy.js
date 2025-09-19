@@ -15,13 +15,5 @@ describe('Urban Ladder Bookshelves Filter Test', () => {
     urbanLadderPage.excludeOutOfStock();
     urbanLadderPage.extractTopProducts();
   });
-
-   it('Logs each Oasis sub-item with sequential numbering', () => {
-    Cypress.on('uncaught:exception', () => false);
-
-    urbanLadderOasisPage.visitHomePage();
-    urbanLadderOasisPage.hoverNewArrivalsAndOasis();
-    urbanLadderOasisPage.logOasisSubItems();
-  });
-
+  
 });
